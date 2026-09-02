@@ -1,0 +1,9 @@
+feature,levels,min_rate_pct,max_rate_pct,spread_pp,max_lift
+Environmental_Concern_Level,5,0.57,51.83,51.26,2.97
+Subsidy_Available,2,0.58,27.47,26.89,1.57
+Range_Anxiety_Level,3,0.14,18.9,18.76,1.08
+Home_Charging_Possible,2,12.71,19.58,6.87,1.12
+City_Type,3,16.11,19.34,3.23,1.11
+Current_Car_Type,4,15.64,18.1,2.46,1.04
+Number_of_Cars_Owned,4,16.57,17.82,1.25,1.02
+Gender,3,17.23,17.76,0.53,1.02

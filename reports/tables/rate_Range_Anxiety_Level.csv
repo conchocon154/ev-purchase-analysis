@@ -1,0 +1,4 @@
+Range_Anxiety_Level,n,buyers,rate_pct,ci_low_pct,ci_high_pct,lift
+Low,603972,114167,18.9,18.8,19.0,1.08
+Medium,62499,2609,4.17,4.02,4.33,0.24
+High,2194,3,0.14,0.05,0.4,0.01

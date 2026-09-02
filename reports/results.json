@@ -1,0 +1,334 @@
+{
+  "rows": 668665,
+  "purchase_rate_pct": 17.46,
+  "missing_values_total": 0,
+  "driver_ranking": [
+    {
+      "feature": "Environmental_Concern_Level",
+      "levels": 5,
+      "min_rate_pct": 0.57,
+      "max_rate_pct": 51.83,
+      "spread_pp": 51.26,
+      "max_lift": 2.97
+    },
+    {
+      "feature": "Subsidy_Available",
+      "levels": 2,
+      "min_rate_pct": 0.58,
+      "max_rate_pct": 27.47,
+      "spread_pp": 26.89,
+      "max_lift": 1.57
+    },
+    {
+      "feature": "Range_Anxiety_Level",
+      "levels": 3,
+      "min_rate_pct": 0.14,
+      "max_rate_pct": 18.9,
+      "spread_pp": 18.76,
+      "max_lift": 1.08
+    },
+    {
+      "feature": "Home_Charging_Possible",
+      "levels": 2,
+      "min_rate_pct": 12.71,
+      "max_rate_pct": 19.58,
+      "spread_pp": 6.87,
+      "max_lift": 1.12
+    },
+    {
+      "feature": "City_Type",
+      "levels": 3,
+      "min_rate_pct": 16.11,
+      "max_rate_pct": 19.34,
+      "spread_pp": 3.23,
+      "max_lift": 1.11
+    },
+    {
+      "feature": "Current_Car_Type",
+      "levels": 4,
+      "min_rate_pct": 15.64,
+      "max_rate_pct": 18.1,
+      "spread_pp": 2.46,
+      "max_lift": 1.04
+    },
+    {
+      "feature": "Number_of_Cars_Owned",
+      "levels": 4,
+      "min_rate_pct": 16.57,
+      "max_rate_pct": 17.82,
+      "spread_pp": 1.25,
+      "max_lift": 1.02
+    },
+    {
+      "feature": "Gender",
+      "levels": 3,
+      "min_rate_pct": 17.23,
+      "max_rate_pct": 17.76,
+      "spread_pp": 0.53,
+      "max_lift": 1.02
+    }
+  ],
+  "associations": [
+    {
+      "feature": "Environmental_Concern_Level",
+      "chi2": 164867.9,
+      "dof": 4,
+      "p_value": "0.000e+00",
+      "cramers_v": 0.4966,
+      "strength": "very strong"
+    },
+    {
+      "feature": "Subsidy_Available",
+      "chi2": 78384.4,
+      "dof": 1,
+      "p_value": "0.000e+00",
+      "cramers_v": 0.3424,
+      "strength": "very strong"
+    },
+    {
+      "feature": "Range_Anxiety_Level",
+      "chi2": 8981.9,
+      "dof": 2,
+      "p_value": "0.000e+00",
+      "cramers_v": 0.1159,
+      "strength": "moderate"
+    },
+    {
+      "feature": "Home_Charging_Possible",
+      "chi2": 4671.5,
+      "dof": 1,
+      "p_value": "0.000e+00",
+      "cramers_v": 0.0836,
+      "strength": "weak"
+    },
+    {
+      "feature": "City_Type",
+      "chi2": 742.8,
+      "dof": 2,
+      "p_value": "4.971e-162",
+      "cramers_v": 0.0333,
+      "strength": "negligible"
+    },
+    {
+      "feature": "Current_Car_Type",
+      "chi2": 173.7,
+      "dof": 3,
+      "p_value": "2.060e-37",
+      "cramers_v": 0.0161,
+      "strength": "negligible"
+    },
+    {
+      "feature": "Number_of_Cars_Owned",
+      "chi2": 55.1,
+      "dof": 3,
+      "p_value": "6.444e-12",
+      "cramers_v": 0.0091,
+      "strength": "negligible"
+    },
+    {
+      "feature": "Gender",
+      "chi2": 33.0,
+      "dof": 2,
+      "p_value": "6.688e-08",
+      "cramers_v": 0.007,
+      "strength": "negligible"
+    }
+  ],
+  "income_low_pct": 6.29,
+  "income_high_pct": 31.43,
+  "interaction_table": {
+    "No": {
+      "1.0": 0.02,
+      "2.0": 0.05,
+      "3.0": 0.3,
+      "4.0": 0.81,
+      "5.0": 2.48
+    },
+    "Yes": {
+      "1.0": 0.94,
+      "2.0": 3.48,
+      "3.0": 18.66,
+      "4.0": 39.94,
+      "5.0": 69.33
+    }
+  },
+  "interaction_test": {
+    "interaction": "Subsidy_Available x Environmental_Concern_Level",
+    "lr_statistic": 7.2,
+    "dof": 9,
+    "p_value": 0.61620191360785,
+    "pseudo_r2_reduced": 0.4574,
+    "pseudo_r2_full": 0.4574
+  },
+  "model_scores": [
+    {
+      "model": "logistic regression",
+      "roc_auc": 0.9381,
+      "average_precision": 0.7411,
+      "brier": 0.07357
+    },
+    {
+      "model": "gradient boosting",
+      "roc_auc": 0.9411,
+      "average_precision": 0.7533,
+      "brier": 0.07159
+    }
+  ],
+  "best_model": "gradient boosting",
+  "lift": [
+    {
+      "top_pct": 10,
+      "contacted": 66866,
+      "buyers_captured": 53422,
+      "capture_pct": 45.7,
+      "rate_in_segment_pct": 79.89,
+      "lift_vs_random": 4.57
+    },
+    {
+      "top_pct": 20,
+      "contacted": 133733,
+      "buyers_captured": 89420,
+      "capture_pct": 76.6,
+      "rate_in_segment_pct": 66.86,
+      "lift_vs_random": 3.83
+    },
+    {
+      "top_pct": 30,
+      "contacted": 200600,
+      "buyers_captured": 107650,
+      "capture_pct": 92.2,
+      "rate_in_segment_pct": 53.66,
+      "lift_vs_random": 3.07
+    },
+    {
+      "top_pct": 40,
+      "contacted": 267466,
+      "buyers_captured": 113417,
+      "capture_pct": 97.1,
+      "rate_in_segment_pct": 42.4,
+      "lift_vs_random": 2.43
+    },
+    {
+      "top_pct": 50,
+      "contacted": 334332,
+      "buyers_captured": 115273,
+      "capture_pct": 98.7,
+      "rate_in_segment_pct": 34.48,
+      "lift_vs_random": 1.97
+    },
+    {
+      "top_pct": 60,
+      "contacted": 401199,
+      "buyers_captured": 116096,
+      "capture_pct": 99.4,
+      "rate_in_segment_pct": 28.94,
+      "lift_vs_random": 1.66
+    },
+    {
+      "top_pct": 70,
+      "contacted": 468066,
+      "buyers_captured": 116546,
+      "capture_pct": 99.8,
+      "rate_in_segment_pct": 24.9,
+      "lift_vs_random": 1.43
+    },
+    {
+      "top_pct": 80,
+      "contacted": 534932,
+      "buyers_captured": 116727,
+      "capture_pct": 100.0,
+      "rate_in_segment_pct": 21.82,
+      "lift_vs_random": 1.25
+    },
+    {
+      "top_pct": 90,
+      "contacted": 601798,
+      "buyers_captured": 116771,
+      "capture_pct": 100.0,
+      "rate_in_segment_pct": 19.4,
+      "lift_vs_random": 1.11
+    },
+    {
+      "top_pct": 100,
+      "contacted": 668665,
+      "buyers_captured": 116779,
+      "capture_pct": 100.0,
+      "rate_in_segment_pct": 17.46,
+      "lift_vs_random": 1.0
+    }
+  ],
+  "odds_ratios": [
+    {
+      "term": "categorical__Subsidy_Available_Yes",
+      "coefficient": 4.514983276191849,
+      "odds_ratio": 91.376,
+      "direction": "increases"
+    },
+    {
+      "term": "categorical__Range_Anxiety_Level_Low",
+      "coefficient": 3.3772906237660067,
+      "odds_ratio": 29.291,
+      "direction": "increases"
+    },
+    {
+      "term": "numeric__Environmental_Concern_Level",
+      "coefficient": 1.8745411816158475,
+      "odds_ratio": 6.518,
+      "direction": "increases"
+    },
+    {
+      "term": "categorical__Range_Anxiety_Level_Medium",
+      "coefficient": 1.7481624758021674,
+      "odds_ratio": 5.744,
+      "direction": "increases"
+    },
+    {
+      "term": "numeric__Annual_Income_USD",
+      "coefficient": 0.7260842777008054,
+      "odds_ratio": 2.067,
+      "direction": "increases"
+    },
+    {
+      "term": "categorical__Home_Charging_Possible_Yes",
+      "coefficient": 0.2310937257601102,
+      "odds_ratio": 1.26,
+      "direction": "increases"
+    },
+    {
+      "term": "categorical__Current_Car_Type_Truck",
+      "coefficient": -0.09447121520157582,
+      "odds_ratio": 0.91,
+      "direction": "decreases"
+    },
+    {
+      "term": "numeric__Daily_Commute_km",
+      "coefficient": -0.08599016769027709,
+      "odds_ratio": 0.918,
+      "direction": "decreases"
+    },
+    {
+      "term": "categorical__Gender_Other",
+      "coefficient": 0.06668855794505303,
+      "odds_ratio": 1.069,
+      "direction": "increases"
+    },
+    {
+      "term": "categorical__City_Type_Suburban",
+      "coefficient": -0.05309251428273698,
+      "odds_ratio": 0.948,
+      "direction": "decreases"
+    },
+    {
+      "term": "categorical__Gender_Male",
+      "coefficient": -0.028776422773271533,
+      "odds_ratio": 0.972,
+      "direction": "decreases"
+    },
+    {
+      "term": "categorical__Current_Car_Type_SUV",
+      "coefficient": 0.025503624596837388,
+      "odds_ratio": 1.026,
+      "direction": "increases"
+    }
+  ]
+}

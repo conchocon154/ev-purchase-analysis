@@ -1,0 +1,17 @@
+,dtype,missing,missing_pct,distinct
+id,int64,0,0.0,668665
+Age,int64,0,0.0,45
+Annual_Income_USD,float64,0,0.0,13214
+Daily_Commute_km,float64,0,0.0,805
+Number_of_Cars_Owned,int64,0,0.0,4
+Charging_Stations_Near_Home,int64,0,0.0,15
+Charging_Stations_Near_Work,int64,0,0.0,20
+Environmental_Concern_Level,float64,0,0.0,5
+Gender,str,0,0.0,3
+City_Type,str,0,0.0,3
+Current_Car_Type,str,0,0.0,4
+Home_Charging_Possible,str,0,0.0,2
+Subsidy_Available,str,0,0.0,2
+Range_Anxiety_Level,str,0,0.0,3
+Will_Buy_EV,str,0,0.0,2
+will_buy,int64,0,0.0,2

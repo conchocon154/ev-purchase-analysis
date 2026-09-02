@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # The competition data needs Kaggle credentials and accepted rules, so CI
+      # cannot download it. Every test therefore runs against data constructed
+      # in tests/conftest.py, which is also why the statistical helpers can be
+      # checked against answers known in advance.
+      - name: Tests
+        run: python -m pytest tests -q
+
+      - name: Analysis modules import cleanly
+        run: |
+          python -c "import sys; sys.path.insert(0, 'src'); from evstudy import charts, data, model, segments, stats; print('all modules import')"
