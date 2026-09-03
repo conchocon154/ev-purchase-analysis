@@ -9,6 +9,10 @@ A data analysis of the Kaggle competition
 [![CI](https://github.com/conchocon154/ev-purchase-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/conchocon154/ev-purchase-analysis/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+**Also published as a Kaggle notebook:**
+[What actually decides an EV purchase](https://www.kaggle.com/code/minhngle/what-actually-decides-an-ev-purchase)
+— the same analysis, self-contained and runnable against the competition data.
+
 The competition asks for a probability. This is not a leaderboard write-up — it
 asks the question a carmaker would ask instead: **which customers buy an electric
 vehicle, what actually moves that decision, and who should we spend money

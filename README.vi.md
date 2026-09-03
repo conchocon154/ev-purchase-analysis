@@ -6,6 +6,10 @@ Phân tích dữ liệu cuộc thi Kaggle
 
 *English: [README.md](README.md)*
 
+**Cũng được đăng dưới dạng notebook Kaggle:**
+[What actually decides an EV purchase](https://www.kaggle.com/code/minhngle/what-actually-decides-an-ev-purchase)
+— cùng phân tích, tự chứa và chạy được trực tiếp trên dữ liệu cuộc thi.
+
 Cuộc thi yêu cầu dự đoán một xác suất. Bài này không viết theo hướng leo bảng xếp
 hạng, mà đặt câu hỏi của một hãng xe: **ai là người mua xe điện, điều gì thực sự
 tác động đến quyết định đó, và nên chi tiền tiếp cận nhóm nào?**

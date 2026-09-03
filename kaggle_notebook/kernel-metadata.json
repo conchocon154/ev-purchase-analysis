@@ -1,0 +1,15 @@
+{
+  "id": "minhngle/what-actually-decides-an-ev-purchase",
+  "title": "What actually decides an EV purchase",
+  "code_file": "ev-purchase-what-actually-decides.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": ["playground-series-s6e9"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
