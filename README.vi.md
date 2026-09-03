@@ -175,6 +175,21 @@ danh sách chỉ chứa 8% người mua, và đuổi theo họ tốn nhiều hơ
    đều có ý nghĩa thống kê và vô giá trị về mặt thương mại.
 5. **Không dùng dữ liệu này để hoạch định vị trí trạm sạc.** Xem kết luận 4.
 
+## Bảng xếp hạng, để tham chiếu
+
+Bài nộp đạt **0,94087** ROC-AUC công khai — **hạng 398/471**, dưới trung vị
+0,94184. Đó là `HistGradientBoostingClassifier` trên mười ba đặc trưng thô,
+không tạo thêm đặc trưng và không dò siêu tham số, được chọn thay cho hồi quy
+logistic (0,93809) và bản trộn theo hạng (0,94040) dựa trên điểm ngoài lớp huấn
+luyện. Kiểm định chéo dự báo 0,94133, bảng xếp hạng trả về 0,94087 — tức khâu
+kiểm định là trung thực dù mô hình đơn giản.
+
+Đáng lưu ý thứ hạng đó có nghĩa gì: khoảng cách từ hạng 1 (0,94644) xuống phân
+vị 25 (0,94138) chỉ là **0,005 AUC**. Dải cạnh tranh còn hẹp hơn khoảng cách
+giữa "giới tính có ý nghĩa" và "giới tính vô dụng" — một phân biệt quyết định
+việc ngân sách marketing có bị ném đi hay không. Bảng xếp hạng và bài phân tích
+trả lời hai câu hỏi khác nhau, và notebook này được viết cho câu hỏi thứ hai.
+
 ## Giới hạn của phân tích này
 
 - **Dữ liệu tổng hợp.** Do Kaggle sinh ra từ mô hình của một khảo sát thật. Nó
