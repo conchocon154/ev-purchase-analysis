@@ -9,6 +9,9 @@ A data analysis of the Kaggle competition
 [![CI](https://github.com/conchocon154/ev-purchase-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/conchocon154/ev-purchase-analysis/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> Written up as a case study — the same findings with the charts, the method
+> and the caveats: **[conchocon154.github.io](https://conchocon154.github.io/)**
+
 **Also published as a Kaggle notebook:**
 [What actually decides an EV purchase](https://www.kaggle.com/code/minhngle/what-actually-decides-an-ev-purchase)
 — the same analysis, self-contained and runnable against the competition data.
