@@ -6,3 +6,6 @@ __pycache__/
 # Competition data: fetched by scripts/fetch_data.py, never committed.
 data/*.csv
 data/*.zip
+
+# Written by scripts/make_submission.py; regenerate rather than commit.
+submission.csv
